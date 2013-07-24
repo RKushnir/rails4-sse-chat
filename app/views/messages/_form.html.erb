@@ -1,0 +1,4 @@
+<%= form_for [@channel, Message.new], remote: true do |form| %>
+  <%= form.text_field :body %>
+  <%= form.submit %>
+<% end %>

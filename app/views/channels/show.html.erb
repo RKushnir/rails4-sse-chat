@@ -1,0 +1,3 @@
+<h1><%= @channel.subject %></h1>
+<ul id="messages"><%= render @channel.messages %></ul>
+<%= render 'messages/form', channel: @channel %>

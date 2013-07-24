@@ -1,0 +1,6 @@
+<%= content_tag_for :li, message do %>
+  <%= message.created_at.strftime("%H:%M") %>
+  <%= message.author.email %>
+  &gt;
+  <%= message.body %>
+<% end %>

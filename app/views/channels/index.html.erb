@@ -1,0 +1,8 @@
+<h1>Channels</h1>
+<ul>
+  <%= content_tag_for :li, @channels do |channel| %>
+    <%= link_to channel.subject, channel %>
+  <% end %>
+</ul>
+
+<%= link_to "New Channel", :new_channel %>
